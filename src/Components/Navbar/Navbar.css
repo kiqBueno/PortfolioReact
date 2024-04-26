@@ -1,0 +1,66 @@
+.navbar {
+  width: 100%;
+  max-width: 75rem;
+  height: 5rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  transition: 0.5s;
+}
+.navbar.light {
+  background: #fffffe;
+}
+.navbar.dark {
+  background: #16161a;
+}
+.toggleIcon {
+  cursor: pointer;
+  object-fit: cover;
+  height: 3rem;
+  width: 3.5rem;
+}
+.logo {
+  object-fit: cover;
+  height: 2.5rem;
+  width: auto;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+}
+.desktopMenuListItem:hover {
+  color: #2cb67d;
+  transition: 0.3s;
+}
+.desktopMenuBtn {
+  background: #7f5af0;
+  border: none;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  display: flex;
+}
+.desktopMenuBtn img {
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+}
+.desktopMenuBtn.light {
+  color: #fffffe;
+}
+.desktopMenuBtn.dark {
+  color: #16161a;
+}
+button {
+  cursor: pointer;
+}

@@ -9,13 +9,13 @@
     text-align: center;
     margin: 0 auto;
 }
-.skillTitle{
+.Title{
     font-size: 3rem;
     font-weight: 600;
     padding-top: 3rem;
     margin-bottom: 1.5rem;
 }
-.skillDesc{
+.Desc{
     font-weight: 400;
     font-size: 1rem;
     max-width: 50rem;

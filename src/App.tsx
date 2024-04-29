@@ -6,6 +6,7 @@ import { Navbar } from "./Components/Navbar";
 import { PaginaInicio } from "./Components/Inicio";
 import { Sobre } from "./Components/Sobre";
 import { Projetos } from "./Components/Projetos";
+import { Contato } from "./Components/Contato";
 
 export const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -37,6 +38,7 @@ export const App = () => {
         ]}
       />
       <Projetos />
+      <Contato />
     </div>
   );
 };

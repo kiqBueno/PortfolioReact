@@ -1,0 +1,56 @@
+#Contato {
+  min-height: calc(100vh - 10rem);
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactForm {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
+}
+.name,
+.email,
+.msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: red;
+  border-radius: 0.5rem;
+  background: blue;
+}
+.submitBtn {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #16161a;
+  background: #fffffe;
+  border-radius: 2rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.submitBtn:hover {
+  background: #16161a;
+  color: #fffffe;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem; 
+}

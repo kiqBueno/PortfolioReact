@@ -30,9 +30,11 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, setTheme }) => {
         </ScrollLink>
       </div>
       <div className="buttons">
-        <button className={`desktopMenuBtn ${theme}`}>
-          <img src={contact} alt="Icone de contato" /> Contato
-        </button>
+        <ScrollLink to="Contato">
+          <button className={`desktopMenuBtn ${theme}`}>
+            <img src={contact} alt="Icone de contato" /> Contato
+          </button>
+        </ScrollLink>
         <img
           onClick={toggleMode}
           src={theme === "light" ? night : day}

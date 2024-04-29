@@ -14,8 +14,8 @@ interface SobreProps {
 export const Sobre: React.FC<SobreProps> = ({ skills }) => {
   return (
     <section id="Sobre">
-      <span className="skillTitle">Minhas Habilidades</span>
-      <span className="skillDesc">
+      <span className="Title">Minhas Habilidades</span>
+      <span className="Desc">
         Sou Kaique Bueno, um desenvolvedor vindo de Curitiba-Brasil. Minha
         aptidão está em resolver problemas de forma criativa na Web. Estou aqui
         para ajudar a transformar suas ideias em realidade digital. Vamos

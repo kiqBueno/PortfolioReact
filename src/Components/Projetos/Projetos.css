@@ -10,16 +10,9 @@
     text-align: center;
     padding: 0 1rem;
 }
-.worksTitle{
-    margin: 1rem 0;
-    font-size: 3rem;
-}
-.worksDesc{
-    font-weight: 400;
-    font-size: 1rem;
-}
 .worksImgs{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100vw;
@@ -29,4 +22,23 @@
     object-fit: cover;
     height: 20rem;
     margin: 0.5rem;
+    border-radius: 1rem;
+}
+.workBtn{
+    padding: 0.75rem 2.5rem;
+    border: 1px solid #16161a;
+    background: #fffffe;
+    border-radius: 2rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+
+}
+.workBtn:hover{
+    background: #16161a;
+    color: #fffffe;
+}
+@media screen and (max-width: 585px) {
+    .worksImg{
+        height: 48vw;
+    }
 }

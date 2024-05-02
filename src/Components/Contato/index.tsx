@@ -15,7 +15,6 @@ export const Contato = () => {
           <textarea
             name="message"
             className="msg"
-            rows="5"
             placeholder="Sua Mensagem"
           ></textarea>
           <button type="submit" value="send" className="submitBtn">

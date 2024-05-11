@@ -64,3 +64,44 @@
 button {
   cursor: pointer;
 }
+.active {
+  color: #2cb67d;
+  transition: 0.5s;
+}
+
+.mobMenu {
+  display: none;
+  object-fit: cover;
+  height: 3rem;
+}
+.navMenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: red;
+  border-radius: 1rem;
+}
+.listItem {
+  color: blue;
+  padding: 0.5rem 0.3rem;
+  margin: 0.25rem;
+  background: pink;
+}
+
+@media screen and (max-width:720px){
+  .mobMenu{
+    display: flex;
+  }  
+  .ul{
+    display: none;
+  }
+  .buttons{
+    display: none;
+  }
+}

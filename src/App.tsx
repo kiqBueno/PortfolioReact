@@ -1,20 +1,33 @@
+// Importando as imagens necessárias
 import UIDesign from "./assets/ui-design.png";
 import WebDesign from "./assets/website-design.png";
 import WebDevelopment from "./assets/webDevelopment.png";
+
+// Importando o useState de React
 import { useState } from "react";
+
+// Importando os componentes filhos
 import { Navbar } from "./Components/Navbar";
 import { PaginaInicio } from "./Components/Inicio";
 import { Sobre } from "./Components/Sobre";
 import { Projetos } from "./Components/Projetos";
 import { Contato } from "./Components/Contato";
 
+// Definindo o componente App
 export const App = () => {
+  // Estado para controlar o tema
   const [theme, setTheme] = useState("dark");
 
   return (
+    // Estrutura principal da aplicação
     <div className={`container ${theme}`}>
+      {/* Barra de navegação */}
       <Navbar theme={theme} setTheme={setTheme} />
+      
+      {/* Página inicial */}
       <PaginaInicio />
+      
+      {/* Seção "Sobre" com habilidades */}
       <Sobre
         skills={[
           {
@@ -37,7 +50,11 @@ export const App = () => {
           },
         ]}
       />
+      
+      {/* Seção de Projetos */}
       <Projetos />
+      
+      {/* Seção de Contato */}
       <Contato />
     </div>
   );
